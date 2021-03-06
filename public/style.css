@@ -45,10 +45,13 @@ h1 {
   color: black;
 }
 
-.bgcolor {
-  background: burlywood;
+.space {
+  background:#7ab4f5;
+  height: 30px;
+  width: 500px;
 }
 
-.name {
-  background: burlywood;
+.bgcolor {
+  background-image: linear-gradient(orange, rgb(248, 233, 213));
+  width: 500px;
 }

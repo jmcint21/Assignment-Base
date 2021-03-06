@@ -20,6 +20,7 @@ function displayMatches() {
             <div class="address">${location.address_line_1}</div>
             <div class="city">${location.city}</div>
             <div class="zip">${location.zip}</div>
+            <div class="space"> </div>
         </li>
         `;
   }).join('');
