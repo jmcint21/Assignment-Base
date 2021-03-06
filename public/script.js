@@ -19,11 +19,12 @@ function numberWithCommas(x) {
 
 function displayMatches() {
     const matchArray = findMatches(this.value, locations);
+    console.table(matchArray);
     const html = matchArray.map(place => {
         return `
             <li>
-                <span class="name">${place.name}</span>
-                <span class="category">${place.categoryName}</span>
+                <span class="name">${place.name}, ${place.city}</span>
+                <span class="category">${place.category}</span>
                 <span class="address">${place.address_line_1}</span>
                 <span class="city">${place.city}</span>
                 <span class="zip">${place.zip}</span>
