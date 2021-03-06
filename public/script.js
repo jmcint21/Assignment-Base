@@ -14,13 +14,13 @@ function displayMatches() {
   const matchArray = findMatches(searchInput.value);
   document.querySelector('.suggestions').innerHTML = matchArray.map(location => {
     return `
-        <li>
+        <li class="bgcolor">
             <div class="name">${location.name}</div>
             <div class="category">${location.category}</div>
             <div class="address">${location.address_line_1}</div>
             <div class="city">${location.city}</div>
             <div class="zip">${location.zip}</div>
-          </li>
+        </li>
         `;
   }).join('');
 }
