@@ -13,11 +13,12 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: #6091c3;
+  background-color: #7ab4f5;
 }
 
 .button.is-primary {
   background: rgb(111, 223, 238);
+  height: 40px;
 }
 
 /* || TYPOGRAPHY || */
@@ -36,8 +37,11 @@ h1 {
 
 .search {
   color: black;
+  height: 40px;
+  font-size: 20px;
 }
 
 .suggestions {
   color: black;
+  
 }
