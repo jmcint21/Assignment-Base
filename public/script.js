@@ -13,9 +13,9 @@ function findMatches(wordToMatch, locations) {
 });
 }
 
-//function numberWithCommas(x) {
-//    return locations.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-//}
+function numberWithCommas(x) {
+    return locations.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
 
 function displayMatches() {
     const matchArray = findMatches(this.value, locations);
@@ -23,10 +23,10 @@ function displayMatches() {
         return `
             <li>
                 <span class="name">${place.name}</span>
-//                <span class="category">${place.categoryName}</span>
-//                <span class="address">${place.address_line_1}</span>
-//                <span class="city">${place.city}</span>
-//                <span class="zip">${place.zip}</span>
+                <span class="category">${place.categoryName}</span>
+                <span class="address">${place.address_line_1}</span>
+                <span class="city">${place.city}</span>
+                <span class="zip">${place.zip}</span>
             </li>
         `;
 }).join('');
@@ -34,7 +34,7 @@ suggestions.innerHTML += html;
 }
 
 const searchInput = document.querySelector('.search');
-const suggestions = document.querySelector('.suggesttions');
+const suggestions = document.querySelector('.suggestions');
 
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
