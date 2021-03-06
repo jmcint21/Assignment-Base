@@ -16,6 +16,10 @@ body {
   background-color: #6091c3;
 }
 
+.button.is-primary {
+  background: rgb(111, 223, 238);
+}
+
 /* || TYPOGRAPHY || */
 
 h1 {

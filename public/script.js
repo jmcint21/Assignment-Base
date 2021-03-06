@@ -19,19 +19,18 @@ function numberWithCommas(x) {
 
 function displayMatches() {
     const matchArray = findMatches(this.value, locations);
-    console.table(matchArray);
     const html = matchArray.map(place => {
         return `
             <li>
-                <span class="name">${place.name}</span>
-                <span class="category">${place.category}</span>
-                <span class="address">${place.address_line_1}</span>
-                <span class="city">${place.city}</span>
-                <span class="zip">${place.zip}</span>
+                <div class="name">${place.name}</div>
+                <div class="category">${place.category}</div>
+                <div class="address">${place.address_line_1}</div>
+                <div class="city">${place.city}</div>
+                <div class="zip">${place.zip}</div>
             </li>
         `;
 }).join('');
-suggestions.innerHTML += html;
+suggestions.innerHTML = html;
 }
 
 const searchInput = document.querySelector('.search');
